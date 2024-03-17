@@ -1,0 +1,1 @@
+Define your type in this folder
