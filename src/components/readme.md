@@ -1,0 +1,1 @@
+Make your global components in this folder
