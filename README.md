@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate next 14
 
-## Getting Started
+Project stucture
 
-First, run the development server:
+### _templates
+this is the boilerplate generator template folder, you can manipulate templates here
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### public
+we can put global assets in this folder
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### src
+core folder
+#### app
+for routing and mapping layout, loading, dictionary
+there is already a local dictionary,
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### components
+put global components here
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### config
+for storing configurations
 
-## Learn More
+#### helpers
+global logic folder
 
-To learn more about Next.js, take a look at the following resources:
+#### hooks
+separates by means of custome hooks all application logins we put with the ui here
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### layouts
+ui layouting here
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### provider
+folder for providers
 
-## Deploy on Vercel
+#### screens
+folder for storing jsx ui
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### service
+folder for the service api
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### shared
+global state
+
+#### styles
+for storing css
+
+==================================
+
+## Generate Layout
+Steps
+- Install PNPM
+- pnpm setup:generator
+
+#### Generate App
+`pnpm gen:app`
+- will create 10 files
+-- dictionary.ts
+-- EN.json
+-- ID.json
+-- page.tsx
+-- hook
+-- screen
+--- main
+--- helper
+--- component
+--- module
+--- parts
+
+#### Generating Layouts
+`pnpm gen:layout`
+
+#### Generate Global State Redux
+`pnpm gen:shared`
