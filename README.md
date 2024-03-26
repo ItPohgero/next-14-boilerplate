@@ -56,6 +56,8 @@ To generate an app, run:
 
 
 ### `pnpm gen:app`
+To generate share redux, run:
+example: pnpm gen:app --name contoh --path contoh
 
 This command will create 10 files:
 - `dictionary.ts`
@@ -72,7 +74,12 @@ This command will create 10 files:
 
 ### Generating Layouts
 To generate layouts, run:
+example: pnpm gen:layout contoh
 
-### `pnpm gen:layout`
+### Generating Share Redux
+To generate share redux, run:
+example: pnpm gen:shared contoh
+
+
 ### Generate Global State Redux
 To generate global state management using Redux, run:
