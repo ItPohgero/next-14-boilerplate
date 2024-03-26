@@ -1,73 +1,78 @@
-# Boilerplate next 14
+Package ini  berlaku untuk pnpm saja
+intall pnpm disini https://pnpm.io/installation
 
-Project stucture
+# Project Structure
 
-### _templates
-this is the boilerplate generator template folder, you can manipulate templates here
+### `_templates`
+This folder contains boilerplate generator templates. You can manipulate templates here to customize boilerplate generation.
 
-### public
-we can put global assets in this folder
+### `public`
+Global assets can be placed in this folder.
 
-### src
-core folder
-#### app
-for routing and mapping layout, loading, dictionary
-there is already a local dictionary,
+### `src`
+Core folder containing application source code.
 
-#### components
-put global components here
+#### `app`
+Responsible for routing, layout mapping, loading, and maintaining dictionaries. Contains a local dictionary.
 
-#### config
-for storing configurations
+#### `components`
+Global components reside here.
 
-#### helpers
-global logic folder
+#### `config`
+Configuration storage folder.
 
-#### hooks
-separates by means of custome hooks all application logins we put with the ui here
+#### `helpers`
+Contains global logic.
 
-#### layouts
-ui layouting here
+#### `hooks`
+Custom hooks for separating application logic related to the UI.
 
-#### provider
-folder for providers
+#### `layouts`
+UI layout components are stored here.
 
-#### screens
-folder for storing jsx ui
+#### `provider`
+Folder for provider components.
 
-#### service
-folder for the service api
+#### `screens`
+Contains JSX UI components.
 
-#### shared
-global state
+#### `service`
+Service API folder.
 
-#### styles
-for storing css
+#### `shared`
+Global state management.
 
-==================================
+#### `styles`
+CSS files are stored here.
 
 ## Generate Layout
-Steps
-- Install PNPM
-- pnpm setup:generator
 
-#### Generate App
-`pnpm gen:app`
-- will create 10 files
--- dictionary.ts
--- EN.json
--- ID.json
--- page.tsx
--- hook
--- screen
---- main
---- helper
---- component
---- module
---- parts
+### Steps
+1. Install PNPM.
+2. Run `pnpm setup:generator`.
 
-#### Generating Layouts
-`pnpm gen:layout`
+### Generate App
+To generate an app, run:
 
-#### Generate Global State Redux
-`pnpm gen:shared`
+
+### `pnpm gen:app`
+
+This command will create 10 files:
+- `dictionary.ts`
+- `EN.json`
+- `ID.json`
+- `page.tsx`
+- `hook`
+- `screen`
+  - `main`
+  - `helper`
+  - `component`
+  - `module`
+  - `parts`
+
+### Generating Layouts
+To generate layouts, run:
+
+### `pnpm gen:layout`
+### Generate Global State Redux
+To generate global state management using Redux, run:
