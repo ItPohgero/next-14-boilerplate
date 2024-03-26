@@ -53,10 +53,6 @@ CSS files are stored here.
 
 ### Generate App
 To generate an app, run:
-
-
-### `pnpm gen:app`
-To generate share redux, run:
 example: pnpm gen:app --name contoh --path contoh
 
 This command will create 10 files:
@@ -79,7 +75,3 @@ example: pnpm gen:layout contoh
 ### Generating Share Redux
 To generate share redux, run:
 example: pnpm gen:shared contoh
-
-
-### Generate Global State Redux
-To generate global state management using Redux, run:
